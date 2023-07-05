@@ -1,0 +1,3 @@
+# BoringsslTest
+
+boringsslをAndroidアプリに組み込むためのテストプロジェクト
