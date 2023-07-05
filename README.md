@@ -12,6 +12,8 @@ boringsslのビルドとAndroid Studioの設定まで行った．
 
 今後はboringsslのライブラリをどのようにしてjavaコードと組み合わせるのか，何ができるのかを確認していく予定．
 
+---
+
 実行環境
 
 - windows 11
