@@ -27,11 +27,13 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    //boringsslのビルドに関する記述
     sourceSets {
         main{
             jniLibs.srcDirs=['src/main/jniLibs']
         }
     }
+    //
 
 }
 
@@ -44,6 +46,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
+    //boringsslのビルドに関する記述
     implementation files('src/main/jniLibs/crypto.lib')
     implementation files('src/main/jniLibs/ssl.lib')
+    //
 }
