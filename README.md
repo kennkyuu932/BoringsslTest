@@ -1,8 +1,16 @@
 # BoringsslTest
 
-boringssl[https://boringssl.googlesource.com/boringssl]をAndroidアプリに組み込むためのテストプロジェクト
+[boringssl](https://boringssl.googlesource.com/boringssl)をAndroidアプリに組み込むためのテストプロジェクト
 
 自分用メモ
+
+現状とこれからやること
+
+2023/07/05
+
+boringsslのビルドとAndroid Studioの設定まで行った．
+
+今後はboringsslのライブラリをどのようにしてjavaコードと組み合わせるのか，何ができるのかを確認していく予定．
 
 実行環境
 
@@ -11,11 +19,11 @@ boringssl[https://boringssl.googlesource.com/boringssl]をAndroidアプリに組
 
 使用したソフトウェア
 
-- git [https://git-scm.com/]
-- CMake [https://cmake.org/]
-- Strawberry Perl [https://strawberryperl.com/]
-- NASM [https://www.nasm.us/]
-- Visual Studio 2022 [https://visualstudio.microsoft.com/ja/]
+- [git](https://git-scm.com/)
+- [CMake](https://cmake.org/)
+- [Strawberry Perl](https://strawberryperl.com/)
+- [NASM](https://www.nasm.us/)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/ja/)
 
 ---
 
@@ -45,4 +53,4 @@ Android Studio
 
 作成したjniLibsディレクトリにcrypt.lib,ssl.libを配置する．
 
-app/build.gradleファイルにビルド設定に関する記述を追加．(build.gradle参照)
+app/build.gradleファイルにビルド設定に関する記述を追加．(build.gradle参照) 
