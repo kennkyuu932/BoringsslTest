@@ -54,7 +54,7 @@ boringsslディレクトリの中にbuildディレクトリを作成し，boring
 
 `ninja -C build`
 
-作成したbuildディレクトリ内のcrypto,decrepit,sslディレクトリ内にそれぞれ`libcrypto.so``libdecrepit.so``libssl.so`ファイルが生成される．
+作成したbuildディレクトリ内のcrypto,decrepit,sslディレクトリ内にそれぞれ `libcrypto.so` `libdecrepit.so` `libssl.so` ファイルが生成される．
 
 ---
 
