@@ -6,6 +6,14 @@
 
 現状とこれからやること
 
+2023/07/10
+
+soファイルを含めてビルドを行うようにCMakeLists.txt,build.gradleファイルを編集．
+
+includeファイル内でdefine定義されている変数を確認することができた．
+
+boringsslの関数を呼び出すテストを行う．
+
 2023/07/06
 
 WSL 2を使ってboringsslをビルドしsoファイルを生成．
