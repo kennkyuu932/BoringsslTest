@@ -86,6 +86,8 @@ CMakeLists.txtにビルド設定を追加し，ビルドする．
 
 MainActivity.javaファイルにstatic{}を記述し，その中でライブラリを読み込む．
 
+補足 : cppファイル内でincludeしていないヘッダファイルはエラーまみれになっているが，includeするとエラーが消える．なぜ?
+
 ---
 
 以下windowsのみで行った失敗
