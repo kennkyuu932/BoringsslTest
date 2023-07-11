@@ -10,6 +10,8 @@
 
 boringssltest.cppファイルの中で，boringsslの関数を呼び出すことができた．(関数`EC_curve_nist2nid("P-256")`を呼び出し出力415を得た)
 
+ヘッダファイルのincludeはssl.hのみでよさそう?
+
 今後はboringsslのドキュメントを読み，PSIの実装に必要な関数を見つける．
 
 2023/07/10
@@ -87,6 +89,8 @@ CMakeLists.txtにビルド設定を追加し，ビルドする．
 MainActivity.javaファイルにstatic{}を記述し，その中でライブラリを読み込む．
 
 補足 : cppファイル内でincludeしていないヘッダファイルはエラーまみれになっているが，includeするとエラーが消える．なぜ?
+
+→include/openssl/ssl.hをincludeするとエラーが消える．
 
 ---
 

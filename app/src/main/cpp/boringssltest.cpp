@@ -1,8 +1,6 @@
 #include <jni.h>
 #include <android/log.h>
-#include "include/openssl/sha.h"
-#include "include/openssl/ec.h"
-#include "include/openssl/nid.h"
+#include "include/openssl/ssl.h"
 
 
 // Write C++ code here.
