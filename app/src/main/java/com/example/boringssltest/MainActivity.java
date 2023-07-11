@@ -29,5 +29,6 @@ public class MainActivity extends AppCompatActivity {
     //sha.hのdefine定義されたSHA_CBLOCK 64を表示するテスト
     public native int cryptoTest();
 
+    //ec.h,nid.hの関数を呼び出すテスト
     public native int functionTest();
 }

@@ -22,11 +22,17 @@
 //         System.loadLibrary("boringssltest")
 //      }
 //    }
+
+
+// includeが正常に行われているのかを確認
+// defineで定義されたSHA_CBLOCKを参照できるかテスト 成功
 extern "C"
 JNIEXPORT int JNICALL
 Java_com_example_boringssltest_MainActivity_cryptoTest(JNIEnv *env, jobject /*this*/) {
     return SHA_CBLOCK;
 }
+
+// includeファイル内のヘッダファイルで宣言された関数が実行されるのかをテスト 成功
 extern "C"
 JNIEXPORT int JNICALL
 Java_com_example_boringssltest_MainActivity_functionTest(JNIEnv *env, jobject /*this*/) {
