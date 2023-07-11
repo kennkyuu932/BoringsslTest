@@ -6,6 +6,12 @@
 
 現状とこれからやること
 
+2023/07/11
+
+boringssltest.cppファイルの中で，boringsslの関数を呼び出すことができた．(関数`EC_curve_nist2nid("P-256")`を呼び出し出力415を得た)
+
+今後はboringsslのドキュメントを読み，PSIの実装に必要な関数を見つける．
+
 2023/07/10
 
 soファイルを含めてビルドを行うようにCMakeLists.txt,build.gradleファイルを編集．
@@ -72,7 +78,11 @@ Android Studio
 
 作成したjniLibsディレクトリにlibcrypto.so,libdecrepit.so,libssl.soを配置する．
 
+src/main/cppディレクトリにboringsslのincludeファイルをコピー．
+
 app/build.gradleファイルにビルド設定に関する記述を追加．(build.gradle参照)
+
+CMakeLists.txtにビルド設定を追加し，ビルドする．
 
 MainActivity.javaファイルにstatic{}を記述し，その中でライブラリを読み込む．
 

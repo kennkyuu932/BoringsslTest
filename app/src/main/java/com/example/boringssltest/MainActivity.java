@@ -23,8 +23,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Log.d(TAG, "cryptoTest: "+cryptoTest());
+        Log.d(TAG, "functionTest: "+functionTest());
     }
 
     //sha.hのdefine定義されたSHA_CBLOCK 64を表示するテスト
     public native int cryptoTest();
+
+    public native int functionTest();
 }

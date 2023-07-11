@@ -37,6 +37,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    //追加したビルド設定
     sourceSets {
         main{
             jniLibs.srcDirs=["src/main/jniLibs"]
