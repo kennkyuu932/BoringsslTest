@@ -6,6 +6,12 @@
 
 現状とこれからやること
 
+2023/7/24
+
+[NISTFIPS186-5](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf)のp.20 6. The Elliptic Curve Digital Signature Algorithm (ECDSA)を読んで出来そうならば実装してみようと考えている．
+
+EC鍵の生成を行った．
+
 2023/07/11
 
 boringssltest.cppファイルの中で，boringsslの関数を呼び出すことができた．(関数`EC_curve_nist2nid("P-256")`を呼び出し出力415を得た)

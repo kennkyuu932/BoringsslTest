@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d(TAG, "cryptoTest: "+cryptoTest());
         Log.d(TAG, "functionTest: "+functionTest());
+        Log.d(TAG, "eckeyTest: "+eckeyTest());
     }
 
     //sha.hのdefine定義されたSHA_CBLOCK 64を表示するテスト
@@ -31,4 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     //ec.h,nid.hの関数を呼び出すテスト
     public native int functionTest();
+
+    //ec_key.hを使って鍵生成を行うテスト
+    public native int eckeyTest();
 }
