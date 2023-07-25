@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         System.loadLibrary("boringssltest");
         System.loadLibrary("crypto");
         System.loadLibrary("decrepit");
-        System.loadLibrary("ssl");
+        //System.loadLibrary("ssl");
     }
 
     @Override
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "cryptoTest: "+cryptoTest());
         Log.d(TAG, "functionTest: "+functionTest());
         Log.d(TAG, "eckeyTest: "+eckeyTest());
+        //Log.d(TAG, "rsakeyTest: "+rsakeyTest());
     }
 
     //sha.hのdefine定義されたSHA_CBLOCK 64を表示するテスト
@@ -35,4 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     //ec_key.hを使って鍵生成を行うテスト
     public native int eckeyTest();
+
+    //rsa鍵生成テスト
+    public native int rsakeyTest();
 }
